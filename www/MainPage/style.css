@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+/* ADD FONT TO DOCUMENT */
+
+:root {
+  --accent-Color: #8f1d30;
+  --header-Color: #262626;
+  --text-Color: #868d94;
+  --info-Color: #eaeaea;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+  padding: 0;
+}
