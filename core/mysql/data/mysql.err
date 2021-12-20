@@ -100,3 +100,4 @@
 2021-12-20T19:24:14.041031Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
 2021-12-20T19:24:14.168715Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
 2021-12-20T19:24:14.169545Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2021-12-20T19:24:14.224265Z 0 [System] [MY-010931] [Server] C:\UniServerZ\schule\core\mysql\bin\mysqld_z.exe: ready for connections. Version: '8.0.23'  socket: ''  port: 3306  MySQL Community Server - GPL.
