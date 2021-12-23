@@ -101,3 +101,42 @@
 2021-12-20T19:24:14.168715Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
 2021-12-20T19:24:14.169545Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
 2021-12-20T19:24:14.224265Z 0 [System] [MY-010931] [Server] C:\UniServerZ\schule\core\mysql\bin\mysqld_z.exe: ready for connections. Version: '8.0.23'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2021-12-22T07:11:15.709938Z 0 [System] [MY-010116] [Server] C:\UniServerZ\schule\core\mysql\bin\mysqld_z.exe (mysqld 8.0.23) starting as process 2104
+2021-12-22T07:11:15.728862Z 0 [Warning] [MY-013242] [Server] --character-set-server: 'utf8' is currently an alias for the character set UTF8MB3, but will be an alias for UTF8MB4 in a future release. Please consider using UTF8MB4 in order to be unambiguous.
+2021-12-22T07:11:15.793655Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2021-12-22T07:11:16.615250Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2021-12-22T07:11:16.936733Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2021-12-22T07:11:17.047484Z 0 [System] [MY-010229] [Server] Starting XA crash recovery...
+2021-12-22T07:11:17.052611Z 0 [System] [MY-010232] [Server] XA crash recovery finished.
+2021-12-22T07:11:17.141450Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2021-12-22T07:11:17.143369Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2021-12-22T07:11:17.249689Z 0 [System] [MY-010931] [Server] C:\UniServerZ\schule\core\mysql\bin\mysqld_z.exe: ready for connections. Version: '8.0.23'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2021-12-22T07:11:32.468700Z 0 [System] [MY-010116] [Server] C:\UniServerZ\schule\core\mysql\bin\mysqld_z.exe (mysqld 8.0.23) starting as process 19256
+2021-12-22T07:11:32.470268Z 0 [Warning] [MY-013242] [Server] --character-set-server: 'utf8' is currently an alias for the character set UTF8MB3, but will be an alias for UTF8MB4 in a future release. Please consider using UTF8MB4 in order to be unambiguous.
+2021-12-22T07:11:32.488674Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2021-12-22T07:11:33.626333Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2021-12-22T07:11:33.829441Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2021-12-22T07:11:33.907254Z 0 [System] [MY-010229] [Server] Starting XA crash recovery...
+2021-12-22T07:11:33.912074Z 0 [System] [MY-010232] [Server] XA crash recovery finished.
+2021-12-22T07:11:33.957947Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2021-12-22T07:11:33.959640Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2021-12-22T07:11:34.018982Z 0 [System] [MY-010931] [Server] C:\UniServerZ\schule\core\mysql\bin\mysqld_z.exe: ready for connections. Version: '8.0.23'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2021-12-23T08:41:03.376647Z 0 [System] [MY-010116] [Server] C:\UniServerZ\schule\core\mysql\bin\mysqld_z.exe (mysqld 8.0.23) starting as process 19776
+2021-12-23T08:41:03.394546Z 0 [Warning] [MY-013242] [Server] --character-set-server: 'utf8' is currently an alias for the character set UTF8MB3, but will be an alias for UTF8MB4 in a future release. Please consider using UTF8MB4 in order to be unambiguous.
+2021-12-23T08:41:03.455352Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2021-12-23T08:41:04.296682Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2021-12-23T08:41:04.569085Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2021-12-23T08:41:04.682140Z 0 [System] [MY-010229] [Server] Starting XA crash recovery...
+2021-12-23T08:41:04.687230Z 0 [System] [MY-010232] [Server] XA crash recovery finished.
+2021-12-23T08:41:04.754612Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2021-12-23T08:41:04.755529Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2021-12-23T08:41:04.827748Z 0 [System] [MY-010931] [Server] C:\UniServerZ\schule\core\mysql\bin\mysqld_z.exe: ready for connections. Version: '8.0.23'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2021-12-23T08:41:23.485836Z 0 [System] [MY-010116] [Server] C:\UniServerZ\schule\core\mysql\bin\mysqld_z.exe (mysqld 8.0.23) starting as process 18464
+2021-12-23T08:41:23.487345Z 0 [Warning] [MY-013242] [Server] --character-set-server: 'utf8' is currently an alias for the character set UTF8MB3, but will be an alias for UTF8MB4 in a future release. Please consider using UTF8MB4 in order to be unambiguous.
+2021-12-23T08:41:23.507695Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2021-12-23T08:41:24.736281Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2021-12-23T08:41:24.985346Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2021-12-23T08:41:25.062470Z 0 [System] [MY-010229] [Server] Starting XA crash recovery...
+2021-12-23T08:41:25.067327Z 0 [System] [MY-010232] [Server] XA crash recovery finished.
+2021-12-23T08:41:25.119023Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2021-12-23T08:41:25.121146Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.

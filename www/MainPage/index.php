@@ -11,7 +11,6 @@
 </head>
 
 
-<!-- https://www.youtube.com/embed/rCW8ELDwcIM?autohide=1&autoplay=1&fs=0&showinfo=0&modestBranding=1&start=0&controls=0&rel=0&disablekb=1&iv_load_policy=3&wmode=transparent&enablejsapi=1&origin=https%3A%2F%2Fwww.braveheartbattle.de&widgetid=1 -->
 
 <body>
     <!-- SEPERATOR  -->
@@ -32,7 +31,7 @@
 
         <h2>Teilnehmer hinzufügen</h2>
 
-        <form action="postToDB.php" method="post" class="form-container morph">
+        <form action="addTeilnehmer.php" method="post" class="form-container morph">
 
             <div class="">
                 <input type="text" name="name" id="name" placeholder="Name">
@@ -40,28 +39,31 @@
             </div>
 
             <div class="align">
-                <input type="radio" name="gender" id="männlich">
+                <input type="text" name="Startnummer" id="Startnummer" placeholder="Startnummer">
+            </div>
+
+
+            <div class="align">
+                <input type="radio" name="Geschlecht" id="männlich" value="Männlich">
                 <label for="männlich">Männlich</label>
             </div>
 
             <div class="align">
-                <input type="radio" name="gender" id="weiblich">
+                <input type="radio" name="Geschlecht" id="weiblich" value="Weiblich">
                 <label for="weiblich">Weiblich</label>
             </div>
 
             <div class="align">
                 <label for="age">Alter</label>
-                <select name="age" id="age">
+                <select name="Age" id="Age">
                     <option value="bis 35">Bis 35</option>
                     <option value="ab 35 bis 50">Ab 35 bis 50</option>
                     <option value="über 50">Über 50</option>
                 </select>
             </div>
-
-
             <div class="align">
-                <label for="strecke">Strecke</label>
-                <select name="strecke" id="strecke">
+                <label for="Strecke">Strecke</label>
+                <select name="Strecke" id="Strecke">
                     <option value="10KM">10 KM</option>
                     <option value="20 KM">20 KM</option>
                 </select>
@@ -84,13 +86,13 @@
             </div>
         </div>
 
-        <h2>Auswerung Eintragen</h2>
+        <h2>Auswertung Eintragen</h2>
 
-        <form action="postToDB.php" method="post" class="form-container morph form-container-small">
+        <form action="auswertungEintragen.php" method="post" class="form-container morph form-container-small">
 
             <div class="align gap-5">
-                <input type="text" name="name" id="name" placeholder="Startnummer">
-                <input type="text" name="Nachname" id="nachname" placeholder="Zeit">
+                <input type="text" name="Startnummer" id="Startnummer" placeholder="Startnummer">
+                <input type="time" step="1" name="Time" id="Time">
             </div>
 
             <input type="submit" value="Bestätigen" class="submit">
@@ -102,41 +104,44 @@
 
         <h2>Auswertung Anzeigen</h2>
 
+
         <div class="flex">
             <div>
-                <form action="getUser.php" method="get" class="form-container form-container-small">
+                <form action="?action=submitFunc" method="post" class="form-container form-container-small">
                     <div class=" flex-col gap-5">
-                        <input type="text" name="name" id="name" placeholder="Name">
-                        <input type="text" name="Nachname" id="nachname" placeholder="Vorname">
+                        <input type="text" name="nameGet" id="name" placeholder="Name">
+                        <input type="number" name="StartnummerGet" id="start" placeholder="Startnummer">
                     </div>
+
+                    <input type="submit" value="Bestätigen" class="submit">
+
+                </form>
+
+
+                <form action="allUserStrecke.php" method="get" class="form-container form-container-small">
+
+                    <select name="Strecke" id="Strecke">
+                        <option value="10KM">10 KM</option>
+                        <option value="20 KM">20 KM</option>
+                    </select>
+                    <input type="submit" value="Alle Teilnehmer anzeigen" class="submit">
+                </form>
+
+
+
+                <form action="allUserAge.php" method="get" class="form-container form-container-small">
+
+                    <select name="Age" id="Age">
+                        <option value="bis 35">Bis 35</option>
+                        <option value="ab 35 bis 50">Ab 35 bis 50</option>
+                        <option value="über 50">Über 50</option>
+                    </select>
+                    <input type="submit" value="Alle Teilnehmer anzeigen" class="submit">
                 </form>
             </div>
 
-            <div>
 
 
-
-
-                <!-- PHP RENDER THIS  -->
-                <table class="tg">
-                    <thead>
-                        <tr>
-                            <th class="tg-baqh">Nummer</th>
-                            <th class="tg-data">Name</th>
-                            <th class="tg-data">Vorname</th>
-                            <th class="tg-data">Zeit</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="tg-data">test</td>
-                            <td class="tg-data">test1</td>
-                            <td class="tg-data">test3</td>
-                            <td class="tg-data">test4</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
         </div>
     </section>
 
@@ -153,19 +158,49 @@
 
         <h2>Blog</h2>
 
-        <div class="flex">
-            <div>
-                <!---------------------- LOOP FOR ALL PHP DATABASE ENTRIES --------------------->
-            </div>
+        <div class="w-full">
 
-            <div>
+            <div class="flex gap-5 px-50">
+                <div class="flex-col sum-blog-area">
 
-                <input type="text" name="name" id="name" placeholder="Name">
-                <textarea name="blogInput" id="blogInput" cols="30" rows="10" placeholder="Blog Eintrag erstellen"></textarea>
+                    <?php
+                    $db = new mysqli('localhost', 'root', 'root', 'schulprojekt');
 
-                <input type="submit" value="Bestätigen" class="submit">
-                <input type="reset" value="Abbrechen" class="abb">
 
+                    if ($db->connect_error) {
+                        die("Connection failed: " . $db->connect_error);
+                    }
+
+                    $sql = "SELECT * FROM blog";
+
+                    $result = $db->query($sql);
+
+                    if ($result->num_rows > 0) {
+                        foreach ($result as $row) {
+                            echo "
+
+                    <div class='blog-area'>
+                        <span>" . $row['Name'] . "</span>
+                        <p>" . $row['Eintrag'] . "</p>
+                    </div>";
+                        }
+                    } else {
+                        echo "Keine Einträge vorhanden";
+                    }
+
+                    ?>
+                </div>
+
+                <form action="writeBlog.php" method="post" class="write-blog">
+                    <div class="blog-input">
+                        <input type="text" name="name" id="name" placeholder="Name">
+                        <textarea name="blogInput" id="blogInput" cols="30" rows="10" placeholder="Blog Eintrag erstellen"></textarea>
+                    </div>
+                    <div class="blog-button">
+                        <input type="submit" value="Bestätigen" class="submit">
+                        <input type="reset" value="Abbrechen" class="abb">
+                    </div>
+                </form>
             </div>
 
     </section>
