@@ -74,3 +74,22 @@
 [Thu Dec 23 09:41:18.196468 2021] [core:notice] [pid 21016:tid 604] AH00094: Command line: 'C:\\UniServerZ\\schule\\core\\apache2\\bin\\httpd_z.exe -d C:/UniServerZ/schule/core/apache2 -f C:\\UniServerZ\\schule\\core\\apache2\\conf\\httpd.conf -d C:\\UniServerZ\\schule\\core\\apache2'
 [Thu Dec 23 09:41:18.199460 2021] [mpm_winnt:notice] [pid 21016:tid 604] AH00418: Parent: Created child process 8948
 [Thu Dec 23 09:41:19.053664 2021] [mpm_winnt:notice] [pid 8948:tid 808] AH00354: Child: Starting 150 worker threads.
+[Mon Jan 17 07:10:09.952581 2022] [core:warn] [pid 21080:tid 432] AH00098: pid file C:/UniServerZ/core/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jan 17 07:10:10.222317 2022] [mpm_winnt:notice] [pid 21080:tid 432] AH00455: Apache/2.4.46 (Win32) PHP/8.0.3 configured -- resuming normal operations
+[Mon Jan 17 07:10:10.222317 2022] [mpm_winnt:notice] [pid 21080:tid 432] AH00456: Apache Lounge VC15 Server built: Feb 18 2021 09:53:33
+[Mon Jan 17 07:10:10.222317 2022] [core:notice] [pid 21080:tid 432] AH00094: Command line: 'C:\\UniServerZ\\core\\apache2\\bin\\httpd_z.exe -d C:/UniServerZ/core/apache2 -f C:\\UniServerZ\\core\\apache2\\conf\\httpd.conf -d C:\\UniServerZ\\core\\apache2'
+[Mon Jan 17 07:10:10.227318 2022] [mpm_winnt:notice] [pid 21080:tid 432] AH00418: Parent: Created child process 1432
+[Mon Jan 17 07:10:12.107081 2022] [mpm_winnt:notice] [pid 1432:tid 568] AH00354: Child: Starting 150 worker threads.
+[Mon Jan 17 07:11:32.595233 2022] [core:warn] [pid 22440:tid 484] AH00098: pid file C:/UniServerZ/core/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jan 17 07:11:32.611201 2022] [mpm_winnt:notice] [pid 22440:tid 484] AH00455: Apache/2.4.46 (Win32) PHP/8.0.3 configured -- resuming normal operations
+[Mon Jan 17 07:11:32.611201 2022] [mpm_winnt:notice] [pid 22440:tid 484] AH00456: Apache Lounge VC15 Server built: Feb 18 2021 09:53:33
+[Mon Jan 17 07:11:32.611201 2022] [core:notice] [pid 22440:tid 484] AH00094: Command line: 'C:\\UniServerZ\\core\\apache2\\bin\\httpd_z.exe -d C:/UniServerZ/core/apache2 -f C:\\UniServerZ\\core\\apache2\\conf\\httpd.conf -d C:\\UniServerZ\\core\\apache2'
+[Mon Jan 17 07:11:32.614168 2022] [mpm_winnt:notice] [pid 22440:tid 484] AH00418: Parent: Created child process 30768
+[Mon Jan 17 07:11:34.182839 2022] [mpm_winnt:notice] [pid 30768:tid 656] AH00354: Child: Starting 150 worker threads.
+[Mon Jan 17 07:15:57.014505 2022] [core:warn] [pid 25068:tid 484] AH00098: pid file C:/UniServerZ/core/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jan 17 07:15:57.030553 2022] [mpm_winnt:notice] [pid 25068:tid 484] AH00455: Apache/2.4.46 (Win32) PHP/8.0.3 configured -- resuming normal operations
+[Mon Jan 17 07:15:57.030553 2022] [mpm_winnt:notice] [pid 25068:tid 484] AH00456: Apache Lounge VC15 Server built: Feb 18 2021 09:53:33
+[Mon Jan 17 07:15:57.030553 2022] [core:notice] [pid 25068:tid 484] AH00094: Command line: 'C:\\UniServerZ\\core\\apache2\\bin\\httpd_z.exe -d C:/UniServerZ/core/apache2 -f C:\\UniServerZ\\core\\apache2\\conf\\httpd.conf -d C:\\UniServerZ\\core\\apache2'
+[Mon Jan 17 07:15:57.033517 2022] [mpm_winnt:notice] [pid 25068:tid 484] AH00418: Parent: Created child process 31320
+[Mon Jan 17 07:15:58.477664 2022] [mpm_winnt:notice] [pid 31320:tid 864] AH00354: Child: Starting 150 worker threads.
+[Mon Jan 17 07:16:09.895608 2022] [php:warn] [pid 31320:tid 1848] [client ::1:49599] PHP Warning:  mysqli::__construct(): (HY000/2002): Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte in C:\\UniServerZ\\www\\MainPage\\index.php on line 167, referer: http://localhost/index.php

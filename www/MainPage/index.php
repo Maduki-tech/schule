@@ -17,7 +17,7 @@
 
     <section class="center h-full">
         <div class="mainBG">
-            <h1 style="color:#fff;">Verwaltungssoftware</h1>
+            <h1 class="MAIN-HEADER">Verwaltungssoftware</h1>
             <div class="img-Container">
                 <img src="../images/header-image.png" alt="">
             </div>
@@ -77,7 +77,7 @@
     </section>
 
 
-    <section class=" center h-full mt-50">
+    <section class=" center h-full mt-100">
         <div class="mainBG auswertung-bg">
             <div class="fusion-section-separator section-separator fusion-section-separator-with-offset">
                 <svg class="fusion-slant-candy seperator-SVG" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
@@ -106,8 +106,8 @@
 
 
         <div class="flex">
-            <div>
-                <form action="?action=submitFunc" method="post" class="form-container form-container-small">
+            <div style="height:200px;">
+                <form action="getUser.php" method="get" class="form-container form-container-small">
                     <div class=" flex-col gap-5">
                         <input type="text" name="nameGet" id="name" placeholder="Name">
                         <input type="number" name="StartnummerGet" id="start" placeholder="Startnummer">
@@ -146,7 +146,7 @@
     </section>
 
 
-    <section class=" center h-full mt-50">
+    <section class=" center h-full mt-100">
         <div class="mainBG blog-bg">
             <div class="fusion-section-separator section-separator fusion-section-separator-with-offset">
                 <svg class="fusion-slant-candy seperator-SVG" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
@@ -204,6 +204,7 @@
             </div>
 
     </section>
+
 
 </body>
 

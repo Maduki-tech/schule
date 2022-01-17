@@ -28,6 +28,13 @@ h6 {
 }
 
 /* ----------------------------- HEADER SECTION ----------------------------- */
+.MAIN-HEADER {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 5em;
+  margin: 0;
+  text-decoration: underline;
+}
 .mainBG {
   display: flex;
   align-items: center;
@@ -105,8 +112,8 @@ h6 {
 }
 
 .morph {
-  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.25),
-    -8px -8px 12px 5px rgba(255, 132, 132, 0.3);
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25),
+    -4px -4px 12px 5px rgba(255, 255, 255, 0.52);
 }
 
 .align {
@@ -151,8 +158,8 @@ select {
   height: 100vh;
 }
 
-.mt-50 {
-  margin-top: 50px;
+.mt-100 {
+  margin-top: 100px;
 }
 
 .gap-5 {
@@ -202,7 +209,7 @@ textarea {
   align-items: left;
   width: 50%;
   padding: 1rem;
-  border: 1px solid var(--accent-Color);
+  border: 2px solid var(--accent-Color);
   border-radius: 20px;
   gap: 1.6rem;
 }
@@ -237,8 +244,8 @@ textarea {
   align-items: left;
   width: 50%;
   height: 20rem;
-  padding: 2rem;
-  border: 1px solid var(--accent-Color);
+  padding: 1rem;
+  border: 2px solid var(--accent-Color);
   border-radius: 20px;
   gap: 0.6rem;
   overflow-y: scroll;
@@ -266,9 +273,22 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: left;
-  width: 80%;
+  width: 90%;
   padding: 1rem;
   border: 1px solid var(--accent-Color);
   border-radius: 20px;
-  gap: 0.6rem;
+  gap: 0.2rem;
+}
+
+.blog-area > span {
+  color: var(--accent-Color);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.blog-area > p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }

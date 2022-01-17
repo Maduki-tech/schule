@@ -12,8 +12,11 @@ if ($db->connect_error) {
 }
 
 
+// if ($startnummer == "") {
+//     $startnummer = "none";
+// }
 
-$sql = "SELECT * FROM teilnehmer WHERE Vorname = '$name' AND Startnummer = $startnummer";
+$sql = "SELECT * FROM teilnehmer WHERE Nachname = '$name' AND Startnummer = $startnummer OR Nachname = '$name' OR  Startnummer = $startnummer";
 
 $result = $db->query($sql);
 
@@ -26,6 +29,7 @@ if ($result->num_rows > 0) {
     echo "<th class='tg-data'>Geschlecht</th>";
     echo "<th class='tg-data'>Alter</th>";
     echo "<th class='tg-data'>Strecke</th>";
+    echo "<th class='tg-data'>Zeit</th>";
     echo "</tr>";
 
     foreach ($result as $row) {
@@ -36,6 +40,7 @@ if ($result->num_rows > 0) {
         echo "<td class='tg-data'>" . $row['Geschlecht'] . "</td>";
         echo "<td class='tg-data'>" . $row['Age'] . "</td>";
         echo "<td class='tg-data'>" . $row['Strecke'] . "</td>";
+        echo "<td class='tg-data'>" . $row['Zeit'] . "</td>";
         echo "</tr>";
     }
     echo "</table>";
@@ -56,7 +61,16 @@ if ($result->num_rows > 0) {
 
 <body>
 
+
     <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         .tg {
             border-collapse: collapse;
             border-spacing: 0;
